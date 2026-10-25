@@ -1,0 +1,168 @@
+/*
+
+Playwright Homework Practice - Arrays of Elements, JavaScript Alerts,
+and iFrames JavaScript
+
+IMPORTANT: - Use Playwright with JavaScript and async/await. - Use
+.all() for Array of Elements exercises. - Use page.on(‘dialog’, …) for
+JavaScript dialog exercises. - Use iframe handling for iframe
+exercises. - URLs and test data are provided below. - Do not use
+hard-coded waits.
+
+  ------------------------------------------------------------
+  Task #1 - Product Elements with .all()
+  ------------------------------------------------------------
+  Task #2 - Select an Element from the Array
+
+  Application: https://www.saucedemo.com/ Username:
+  standard_user Password: secret_sauce
+
+  1. Login. 2. Locate all product names. 3. Use .all(). 4.
+  Print the FIRST product’s text. 5. Print the SECOND
+  product’s text. 6. Click the SECOND product using its array
+  index. 7. Assert that the detail page displays: Sauce Labs
+  Bike Light
+
+  Remember: JavaScript array indexes start at 0.
+  ------------------------------------------------------------
+
+Task #3 - Find an Element While Looping
+
+Application: https://www.saucedemo.com/ Username: standard_user
+Password: secret_sauce
+
+1.  Login.
+2.  Get all product-name elements using .all().
+3.  Loop through them with a traditional for loop.
+4.  Print every product name.
+5.  Find: Sauce Labs Fleece Jacket
+6.  When found, print: Product Found
+7.  Click that product.
+8.  Assert the detail page contains: Sauce Labs Fleece Jacket
+
+  ------------------------------------------------------------
+                   Task #4 - Array of Buttons
+  ------------------------------------------------------------
+                   Task #5 - JavaScript Alert
+
+                          Application:
+      https://the-internet.herokuapp.com/javascript_alerts
+
+                   Button: Click for JS Alert
+
+    1. Navigate to the page. 2. BEFORE clicking the button,
+     create a dialog listener using page.on(). 3. Print the
+  dialog message. 4. Accept the dialog. 5. Click “Click for JS
+    Alert”. 6. Assert the Result contains: You successfully
+                        clicked an alert
+  ------------------------------------------------------------
+
+Task #6 - JavaScript Confirm - Accept
+
+Application: https://the-internet.herokuapp.com/javascript_alerts
+
+Button: Click for JS Confirm
+
+1.  Use page.on() to listen for the dialog.
+2.  Print its message.
+3.  Accept the dialog.
+4.  Click “Click for JS Confirm”.
+5.  Assert Result contains: You clicked: Ok
+
+  ------------------------------------------------------------
+  Task #7 - JavaScript Confirm - Dismiss
+  ------------------------------------------------------------
+  Task #8 - JavaScript Prompt
+
+  Application:
+  https://the-internet.herokuapp.com/javascript_alerts
+
+  Button: Click for JS Prompt
+
+  Text to enter: Playwright Automation
+
+  1. Set up page.on() before triggering the prompt. 2. Print
+  the dialog message. 3. Accept the prompt and provide:
+  Playwright Automation 4. Click “Click for JS Prompt”. 5.
+  Assert Result contains: You entered: Playwright Automation
+  ------------------------------------------------------------
+
+Task #9 - Alert Test Group
+
+Create: test.describe(“JavaScript Alert Tests”, …)
+
+Application: https://the-internet.herokuapp.com/javascript_alerts
+
+beforeEach: - Navigate to the application.
+
+Test 1: - Trigger JS Alert. - Handle it with page.on(). - Accept it. -
+Validate: You successfully clicked an alert
+
+Test 2: - Trigger JS Confirm. - Handle it with page.on(). - Dismiss
+it. - Validate: You clicked: Cancel
+
+Test 3: - Trigger JS Prompt. - Enter: Loopcamp - Accept it. - Validate:
+You entered: Loopcamp
+
+afterEach should print: Alert test completed
+
+  ------------------------------------------------------------
+  Task #10 - Locate Content Inside an iFrame
+  ------------------------------------------------------------
+  Task #11 - Enter Text Inside an iFrame
+
+  Application: https://the-internet.herokuapp.com/iframe
+
+  Text: Playwright iFrame Practice
+
+  1. Navigate to the page. 2. Access the iframe. 3. Locate the
+  editable area inside it. 4. Clear the existing text if
+  needed. 5. Enter: Playwright iFrame Practice 6. Assert that
+  the editable area contains: Playwright iFrame Practice
+  ------------------------------------------------------------
+
+Task #12 - Main Page vs iFrame
+
+Application: https://the-internet.herokuapp.com/iframe
+
+MAIN PAGE: 1. Locate the heading: An iFrame containing the TinyMCE
+WYSIWYG Editor 2. Assert it is visible.
+
+IFRAME: 3. Access the iframe. 4. Locate the editable area. 5. Assert it
+is visible. 6. Enter: Loopcamp Playwright 7. Assert it contains:
+Loopcamp Playwright
+
+Question: Which element belongs to the main page and which belongs to
+the iframe?
+
+  ------------------------------------------------------------
+  Task #13 - iFrame with Hooks
+  ------------------------------------------------------------
+  BONUS - Combine All Three Topics
+
+  Create: test.describe(“Advanced Playwright Practice”, …)
+
+  Test 1 - Array of Elements URL: https://www.saucedemo.com/
+  Username: standard_user Password: secret_sauce
+
+  - Login. - Get all product names using .all(). - Loop
+  through them. - Print each name. - Find and click: Sauce
+  Labs Onesie - Assert the detail page contains: Sauce Labs
+  Onesie
+
+  Test 2 - JavaScript Dialog URL:
+  https://the-internet.herokuapp.com/javascript_alerts
+
+  - Trigger the JS Prompt. - Handle it using page.on(). -
+  Enter: Loopcamp Student - Accept it. - Assert Result
+  contains: You entered: Loopcamp Student
+
+  Test 3 - iFrame URL:
+  https://the-internet.herokuapp.com/iframe
+
+  - Access the iframe. - Locate the editable area. - Enter:
+  Final Playwright Practice - Assert it contains: Final
+  Playwright Practice
+  ------------------------------------------------------------
+Displaying 3. Homework practice.txt.
+*/

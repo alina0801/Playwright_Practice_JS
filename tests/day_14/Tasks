@@ -1,0 +1,163 @@
+
+3. Home Practice.txt
+100%
+Playwright Homework Practice - Mouse, Keyboard, and Web Tables
+JavaScript
+
+IMPORTANT: - Use Playwright with JavaScript and async/await. - URLs and
+test data are provided. - Use traditional for loops when asked. - Do not
+use hard-coded waits.
+
+  ------------------------------------------------------------
+  Task #1 - Mouse Hover
+  ------------------------------------------------------------
+  Task #2 - Double Click
+
+  URL: https://testautomationpractice.blogspot.com/
+
+  1. Find the Double Click section. 2. Locate the “Copy Text”
+  button. 3. Confirm the source field contains “Hello World!”.
+  4. Double-click “Copy Text”. 5. Validate the second field
+  now contains “Hello World!”.
+
+  Practice: dblclick()
+  ------------------------------------------------------------
+
+Task #3 - Right Click
+
+URL: https://swisnl.github.io/jQuery-contextMenu/demo.html
+
+1.  Locate “right click me”.
+2.  Right-click it.
+3.  Assert that the context-menu option “Edit” is visible.
+4.  Click “Edit”.
+
+Practice: click() with the right mouse button.
+
+  ------------------------------------------------------------
+  Task #4 - Drag and Drop
+  ------------------------------------------------------------
+  Task #5 - Keyboard Enter
+
+  URL: https://www.google.com/ Search: Playwright Automation
+
+  1. Enter the search text. 2. Do NOT click the Search button.
+  3. Press Enter using a keyboard action. 4. Verify the
+  results page is displayed.
+  ------------------------------------------------------------
+
+Task #6 - Select All and Replace
+
+URL: https://the-internet.herokuapp.com/inputs
+
+1.  Enter 12345.
+2.  Select the entire value using: Mac: Meta+A Windows: Control+A
+3.  Replace it with 999.
+4.  Validate the final input value is 999.
+
+  ------------------------------------------------------------
+  Task #7 - Arrow Keys
+  ------------------------------------------------------------
+  Task #8 - Tab and Enter
+
+  URL: https://www.saucedemo.com/ Username: standard_user
+  Password: secret_sauce
+
+  1. Click Username and enter standard_user. 2. Use Tab to
+  move to Password. 3. Enter secret_sauce. 4. Use Tab to move
+  to the Login button. 5. Press Enter instead of clicking
+  Login. 6. Assert “Products” is visible after login.
+  ------------------------------------------------------------
+
+Task #9 - Read All Web Table Rows
+
+URL: https://the-internet.herokuapp.com/tables Table: Example 1
+
+1.  Locate all tbody rows in Example 1.
+2.  Use .all() to get an array.
+3.  Use a traditional for loop.
+4.  Print every row’s text.
+5.  Determine how many data rows exist.
+
+  ------------------------------------------------------------
+  Task #10 - Find John Smith
+  ------------------------------------------------------------
+  Task #11 - Read a Cell from a Matching Row
+
+  URL: https://the-internet.herokuapp.com/tables Table:
+  Example 1
+
+  Person: Jason Doe Expected Email: jdoe@hotmail.com
+
+  1. Loop through the rows. 2. Find Jason Doe. 3. Locate the
+  Email cell INSIDE that matching row. 4. Print its value. 5.
+  Assert it equals jdoe@hotmail.com.
+
+  Do not locate the email globally after finding the row.
+  ------------------------------------------------------------
+
+Task #12 - Validate Multiple Columns
+
+URL: https://the-internet.herokuapp.com/tables Table: Example 1
+
+Person: Tim Conway
+
+Expected: Last Name: Conway First Name: Tim Email: tconway@earthlink.net
+Due: $50.00 Website: http://www.timconway.com
+
+1.  Loop through all rows.
+2.  Find Tim Conway.
+3.  Validate all expected values in his row.
+
+  ------------------------------------------------------------
+  Task #13 - Click an Action in a Matching Row
+  ------------------------------------------------------------
+  Task #14 - Find a Row by Email
+
+  URL: https://the-internet.herokuapp.com/tables Table:
+  Example 1 Email: fbach@yahoo.com
+
+  1. Loop through the rows. 2. Find the row containing
+  fbach@yahoo.com. 3. Retrieve and print First Name, Last
+  Name, Due, and Website.
+
+  Expected: Name: Frank Bach Due: $51.00 Website:
+  http://www.frank.com
+  ------------------------------------------------------------
+
+Task #15 - Web Table Assertions
+
+URL: https://the-internet.herokuapp.com/tables Table: Example 1 Person:
+John Smith
+
+1.  Assert the table is visible.
+2.  Find John Smith’s row.
+3.  Assert the row is visible.
+4.  Assert the row contains: jsmith@gmail.com $50.00
+    http://www.jsmith.com
+
+  ------------------------------------------------------------
+  BONUS - Mouse, Keyboard, and Web Table
+
+  Test 1 - Mouse URL:
+  https://the-internet.herokuapp.com/hovers - Hover over
+  user2. - Assert “name: user2”. - Assert “View profile” is
+  visible.
+
+  Test 2 - Keyboard URL:
+  https://the-internet.herokuapp.com/inputs - Enter 10. -
+  ArrowUp 5 times -> expected 15. - ArrowDown 3 times ->
+  expected 12. - Validate the final value.
+
+  Test 3 - Web Table URL:
+  https://the-internet.herokuapp.com/tables Table: Example 1
+  Person: Jason Doe
+
+  Expected: Email: jdoe@hotmail.com Due: $100.00 Website:
+  http://www.jdoe.com
+
+  - Get rows using .all(). - Loop with a traditional for
+  loop. - Find Jason Doe. - Validate the expected data. -
+  Locate “edit” INSIDE Jason Doe’s row. - Click it.
+  ------------------------------------------------------------
+Displaying 3. Home Practice.txt.
